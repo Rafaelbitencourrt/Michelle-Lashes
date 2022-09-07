@@ -35,9 +35,25 @@ a {
 
 .header-menu a {
   display: inline-block;
+  position: relative;
   padding: 16px 0px;
   color: #fff;
   font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  border: 1px solid;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
