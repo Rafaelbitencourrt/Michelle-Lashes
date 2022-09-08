@@ -44,11 +44,11 @@ a {
 
 .header-menu a::after {
   content: "";
-  position: absolute;
+  display: block;
   height: 2px;
   width: 0px;
-  border: 1px solid;
   background-color: #fff;
+  margin-top: 4px;
   transition: 0.3s;
 }
 
@@ -68,6 +68,10 @@ a {
 
   .header-menu a:hover {
     background-color: #2e2e2e;
+  }
+
+  .header-menu a::after {
+    display: none;
   }
 }
 
